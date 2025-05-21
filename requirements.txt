@@ -1,0 +1,9 @@
+httpx
+supabase
+pydantic
+pydantic-ai
+logfire
+python-dotenv
+fastapi
+uvicorn
+beautifulsoup4 
