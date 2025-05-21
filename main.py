@@ -1,3 +1,6 @@
+# HINWEIS: Diese Datei ist für lokale Entwicklung gedacht.
+# Für Vercel-Deployment muss die App in api/main.py liegen!
+
 from fastapi import FastAPI
 from pydantic import BaseModel
 from agent import Deps, supabase_client, seo_agent
