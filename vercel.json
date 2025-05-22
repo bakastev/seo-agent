@@ -1,18 +1,11 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "api/main.py",
-      "use": "@vercel/python",
-      "config": { "maxLambdaSize": "50mb" }
-    }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "api/main.py" }
-  ],
   "functions": {
     "api/**": {
       "excludeFiles": "{__pycache__,*.cache,.git,tests,docs,seo_agent_backend_backup}/**"
     }
-  }
+  },
+  "routes": [
+    { "src": "/(.*)", "dest": "api/main.py" }
+  ]
 } 
