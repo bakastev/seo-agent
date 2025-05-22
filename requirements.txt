@@ -5,5 +5,4 @@ pydantic
 pydantic-ai
 httpx
 python-dotenv
-beautifulsoup4
-logfire 
+beautifulsoup4 
