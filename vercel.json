@@ -9,5 +9,10 @@
   ],
   "routes": [
     { "src": "/(.*)", "dest": "api/main.py" }
-  ]
+  ],
+  "functions": {
+    "api/**": {
+      "excludeFiles": "{__pycache__,*.cache,.git,tests,docs,seo_agent_backend_backup}/**"
+    }
+  }
 } 
