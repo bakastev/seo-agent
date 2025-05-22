@@ -1,6 +1,4 @@
-# HINWEIS: Diese Datei ist für Vercel-Deployment gedacht.
-# Die komplette Backend-Logik ist hier enthalten!
-
+# Vercel redeploy trigger 2024-05-22-1
 from fastapi import FastAPI
 from pydantic import BaseModel
 from agent import Deps, supabase_client, seo_agent
