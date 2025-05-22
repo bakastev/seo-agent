@@ -1,13 +1,9 @@
+from __future__ import annotations
 import os
 from dataclasses import dataclass
 from typing import Any
 from supabase import create_client
-import logfire
 from pydantic_ai import Agent, RunContext
-from dotenv import load_dotenv
-
-load_dotenv()
-logfire.configure(send_to_logfire='if-token-present')
 
 @dataclass
 class Deps:
@@ -29,5 +25,5 @@ async def save_seo_report(ctx: RunContext[Deps], url: str, report_data: dict) ->
         'url': url,
         'report_data': report_data,
     }
-    response = ctx.supabase_client.table('seo_reports').insert(report).execute()
-    return response.data[0]['id'] 
+    response = ctx.deps.supabase_client.table('seo_reports').insert(report).execute()
+    return response.data['id'] 
