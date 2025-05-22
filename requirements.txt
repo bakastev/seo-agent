@@ -1,2 +1,9 @@
 fastapi
-uvicorn 
+uvicorn
+supabase-py
+pydantic
+pydantic-ai
+httpx
+python-dotenv
+beautifulsoup4
+logfire 
